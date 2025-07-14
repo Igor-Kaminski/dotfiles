@@ -1,0 +1,9 @@
+enable_audio_bell no
+visual_bell_duration 0
+background_optacity= 0.8
+
+
+# BEGIN_KITTY_THEME
+# Wez
+include current-theme.conf
+# END_KITTY_THEME
