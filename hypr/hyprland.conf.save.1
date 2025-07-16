@@ -82,8 +82,9 @@ general {
     gaps_in = 5
     gaps_out = 15
 
-    border_size =3
+    border_size =1000
 
+y
 
 
     # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
@@ -239,7 +240,7 @@ bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod, F, fullscreen, 1,
 bind = $mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy
 bind = $mainMod, P, exec, ~/Scripts/Rice_Script/set_wallpaper_wofi.sh 
-bind = $mainMod, O, exec, hyprshot -m output -o ~/Pictures/Screenshots
+
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
