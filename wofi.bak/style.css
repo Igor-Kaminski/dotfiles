@@ -1,0 +1,76 @@
+
+window {
+    margin: 5px;
+    border: 2px solid #3c3c3c;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #a3a3a3;
+}
+
+#input {
+    margin: 10px;
+    border: none;
+    background-color: #323232;
+    color: #f0f0f0;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 400;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Normal menu entries */
+#entry {
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #a3a3a3;
+    font-weight: 400;
+}
+
+/* Highlight selected menu entry */
+#entry:selected {
+    background-color: #f39c12;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Expanded submenu indicator - usually items that expand have some special style */
+/* Assume expanded items get a class like "expanded" or use :has() (if supported) */
+#entry.expanded, 
+#entry[aria-expanded="true"] {
+    background-color: #2a2a2a;
+    color: #f39c12;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Style for submenu items when expanded */
+/* To ensure submenu items are readable, override default white */
+.submenu, .submenu > #entry {
+    background-color: #1e1e1e;
+    color: #a3a3a3;
+    padding-left: 20px;
+}
+
+/* Hover for submenu items */
+.submenu > #entry:hover {
+    background-color: #f39c12;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Optional: small arrow indicator for expandable menu items */
+#entry.expanded::after,
+#entry[aria-expanded="true"]::after {
+    content: " ▶";
+    float: right;
+    color: #f39c12;
+    font-weight: 600;
+}

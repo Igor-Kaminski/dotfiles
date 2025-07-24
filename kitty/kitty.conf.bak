@@ -4,6 +4,6 @@ background_optacity= 0.8
 
 
 # BEGIN_KITTY_THEME
-# PaperColor Dark
+# Wez
 include current-theme.conf
 # END_KITTY_THEME
