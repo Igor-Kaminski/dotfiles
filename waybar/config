@@ -23,8 +23,8 @@
   },
 
   "custom/notification": {
-    "tooltip": false,
-    "format": "",
+    "tooltip": "Notifications",
+    "format": "",
     "on-click": "swaync-client -t -sw",
     "escape": true
   },
@@ -49,15 +49,7 @@
     }
   },
 
-  "network": {
-    "format-wifi": "",
-    "format-ethernet": "",
-    "format-disconnected": "",
-    "tooltip-format-disconnected": "Error",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} 🖧",
-    "on-click": "kitty nmtui"
-  },
+
 
   "custom/power": {
     "format": "⏻",
@@ -115,7 +107,7 @@
 
   "tray": {
     "icon-size": 14,
-    "spacing": 10
+    "spacing": 10,
   },
 
   "pulseaudio": {
